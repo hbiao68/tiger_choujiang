@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="../public/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../public/css/hb_wap.css">
+	<title>惠拼团</title>
+	<style>
+		.goodsLists .goodsLists{
+			margin-top: 5px;;
+		}
+	</style>
+</head>
+<body class="margin_0">
+
+
+
+<!--  分享弹出层  --->
+<div id="shareWidget" class="" >
+	<div class="fixed position_all_0 bg_000 all_height opacity_65"></div>
+
+	<div class="absolute all_width position_left_0 bg_ff padding_15px" style="top: 30%;">
+		<ul class="list_unstyled goodsLists">
+			<li class="goodsItem">
+				<div class="width_100px float_left">
+					商品名称
+				</div>
+				<div class="font_16">
+					好想你枣
+				</div>
+				<div class=""></div>
+			</li>
+
+			<li class="goodsItem">
+				<div class="width_100px float_left">
+					商品价格
+				</div>
+				<div class="color_e5005a">
+					<span class="font_12">￥</span>
+					<span class="font_16">20.35</span>
+				</div>
+				<div class=""></div>
+			</li>
+
+			<style>
+				.SKUlist li span{
+					border: 1px solid #d8d8d8;
+				}
+			</style>
+
+			<li>
+				<ul class="list-unstyled SKUlist">
+
+					<li id="tuangou_sku_list_214" onclick="selectOneAttr(this)"
+						class="margin_top_10 float_left width_50">
+						<span class="sqh_border_d8d8d8  padding_right_10" this_tuangou_sku_id="214"
+							  this_kucun="979" this_jiage="28.80" this_price="30.80">720g湾仔水饺</span>
+					</li>
+					<li id="tuangou_sku_list_215" onclick="selectOneAttr(this)"
+						class="margin_top_10 float_left width_50">
+						<span class="sqh_border_d8d8d8  padding_right_10" this_tuangou_sku_id="215"
+							  this_kucun="971" this_jiage="12.80" this_price="15.00">500g新发现水饺</span>
+					</li>
+					<li id="tuangou_sku_list_216" onclick="selectOneAttr(this)"
+						class="margin_top_10 float_left width_50">
+						<span class="sqh_border_d8d8d8  padding_right_10" this_tuangou_sku_id="216"
+							  this_kucun="993" this_jiage="15.80" this_price="18.00">500g三全馄饨</span>
+					</li>
+					<li id="tuangou_sku_list_217" onclick="selectOneAttr(this)"
+						class="margin_top_10 float_left width_50">
+						<span class="sqh_border_d8d8d8  padding_right_10" this_tuangou_sku_id="217"
+							  this_kucun="956" this_jiage="6.80" this_price="8.00">500g三全凌汤圆</span>
+					</li>
+					<li id="tuangou_sku_list_218" onclick="selectOneAttr(this)"
+						class="margin_top_10 float_left width_50">
+						<span class="sqh_border_d8d8d8  padding_right_10" this_tuangou_sku_id="218"
+							  this_kucun="984" this_jiage="21.80" this_price="24.00">702g三全水饺</span>
+					</li>
+					<li id="tuangou_sku_list_219" onclick="selectOneAttr(this)"
+						class="margin_top_10 float_left width_50">
+						<span class="sqh_border_d8d8d8  padding_right_10" this_tuangou_sku_id="219"
+							  this_kucun="989" this_jiage="16.80" this_price="18.00">800g三全灌汤水饺</span>
+					</li>
+					<li id="tuangou_sku_list_220" onclick="selectOneAttr(this)"
+						class="margin_top_10 float_left width_50">
+						<span class="sqh_border_d8d8d8  padding_right_10" this_tuangou_sku_id="220"
+							  this_kucun="958" this_jiage="7.80" this_price="8.00">360g三全奶黄包</span>
+					</li>
+					<li id="tuangou_sku_list_221" onclick="selectOneAttr(this)"
+						class="margin_top_10 float_left width_50">
+						<span class="sqh_border_d8d8d8  padding_right_10" this_tuangou_sku_id="221"
+							  this_kucun="967" this_jiage="13.80" this_price="14.00">450g三全小笼包</span>
+					</li>
+					<li id="tuangou_sku_list_222" onclick="selectOneAttr(this)"
+						class="margin_top_10 float_left width_50">
+						<span class="sqh_border_d8d8d8  padding_right_10" this_tuangou_sku_id="222"
+							  this_kucun="968" this_jiage="21.80" this_price="24.00">300g儿童水饺馄饨</span>
+					</li>
+					<li id="tuangou_sku_list_223" onclick="selectOneAttr(this)"
+						class="margin_top_10 float_left width_50">
+						<span class="sqh_border_d8d8d8  padding_right_10" this_tuangou_sku_id="223"
+							  this_kucun="959" this_jiage="9.80" this_price="12.00">320g手抓饼</span>
+					</li>
+					<div class="" style="clear:both"></div>
+
+					<!-- 计数器 -->
+					<div class="overflow_hidden margin_top_10 line_height_35px" id="bottomPanel">
+						<div class="col-xs-6 padding-top-15 padding-left-0">
+							<span class="">选择数量</span>
+						</div>
+						<!-- 计数器 -->
+						<div class="col-xs-6 padding-left-0">
+							<div class="input-group " style="width:120px;position:absolute;top:0px;right:0px;">
+								<div class="input-group-btn">
+									<button type="button"
+											class="btn btn-default padding_6px minus_btn clear_border_radius clear_padding"
+											style="height:35px;width:35px;">
+										<span class="glyphicon glyphicon-minus"></span>
+									</button>
+								</div>
+								<input type="text" value="1" id="sku_goods_num" class="form-control text-center"
+									   onkeyup="this.value=this.value.replace(/\D/g,'')"
+									   onafterpaste="this.value=this.value.replace(/\D/g,'')"
+									   onblur="goodsNumberBlur(this)" style="height:35px;dispaly:table-cell;">
+
+								<div class="input-group-btn">
+									<button type="button"
+											class="btn btn-default padding_6px plus_btn clear_border_radius clear_padding"
+											style="height:35px;width:35px;">
+										<span class="glyphicon glyphicon-plus"></span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</ul>
+			</li>
+		</ul>
+
+		<button class="btn btn-primary btn-block" onclick="commit()">
+			确 认
+		</button>
+	</div>
+</div>
+
+<script type="text/javascript" src="../public/js/jquery.min.js"></script>
+<script type="text/javascript" src="../public/js/hb_common.js"></script>
+<script type="text/javascript">
+
+	//如果使用new ，则方法内部的this则是当前对象，如果是直接使用groupBtnInit()，则this代表的是window对象
+	new groupBtnInit({
+		targetId : "bottomPanel",
+		groupBtnWidth : "120px",
+		groupBtnStyle:"width:120px;position:absolute;top:0px;right:0px;",
+		inputStyle:"height:35px;dispaly:table-cell;",
+		minusBtnClass:"clear_border_radius clear_padding",
+		minusBtnStyle:"height:35px;width:35px;",
+		pluseBtnClass:"clear_border_radius clear_padding",
+		pluseBtnStyle:"height:35px;width:35px;",
+		//加按钮调用之前,pluginObj代表当前运行的对象，obj代表按钮对象
+		afterPlusFunc:function(obj,pluginObj){
+
+		},
+		//加按钮调用之前,pluginObj代表当前运行的对象，obj代表按钮对象
+		afterMinuseFunc:function(obj,pluginObj){
+
+		}
+	});
+
+	//选择属性
+	function selectOneAttr(obj){
+		var currentObj = $(obj);
+		currentObj.closest(".list-unstyled").find("li").removeClass("color_e5005a");
+		currentObj.addClass("color_e5005a");
+	}
+
+	//提交订单
+	function commit(){
+		$.ajax({
+			url: "http://www.sqhzg.cn/house/templates/secondHouse/secondHouseList.html",
+			async: true,
+			data:"page=1&name=3",
+			success: function(html){
+				console.log(html);
+
+			}
+		});
+	}
+
+
+
+</script>
+</body>
+</html>

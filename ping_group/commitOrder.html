@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="../public/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../public/css/hb_wap.css">
+	<title>提交订单</title>
+</head>
+<body class="margin_0">
+
+<div class="nav_header color_e5005a bg_fdd000">
+	<div class="nav_header_left">
+		<a href="https://www.baidu.com">
+			<span class="icon iconfont color_e5005a">&#xE60C;</span>
+		</a>
+	</div>
+	提交订单
+	<!--<div class="nav_header_right">-->
+		<!--<a href="https://www.baidu.com" class="btn btn-primary">确定</a>-->
+	<!--</div>-->
+</div>
+
+<!-- 收货地址 -->
+<div class="padding_15px">
+	<div class="relative"  onclick="showDialogAddress()">
+		<div class="float_left width_20px line_height_45px">
+			<span class="icon iconfont color_e5005a">&#xE646;</span>
+		</div>
+		<div class="margin_left_20">
+			<div class="float_right width_20px line_height_45px">
+				<span class="icon iconfont color_e5005a">&#xE60D;</span>
+			</div>
+			<div class="margin_right_20">
+				<div>收货人：杨洗生18652456245 </div>
+				<div class="oneline_nobreak">收货地址：湖南 长沙 雨花区 湖南商会大厦西塔13楼</div>
+			</div>
+		</div>
+		<div class="clear_both"></div>
+	</div>
+</div>
+
+<div style="border:2px solid #efefef"></div>
+
+<div class="">
+
+	<div class="line_height_35px padding_left_15 padding_right_15">
+		商品信息
+	</div>
+
+	<div class="border_b_bottom_eee border_b_top_eee padding_top_10 padding_bottom_10 padding_left_15 padding_right_15">
+		<div class="float_left width_80px">
+			<img src="../images/pinggroup/grouplist_03.jpg" class="img_responsive">
+		</div>
+		<div class="margin_left_90 line_height_35px">
+			<div class="">【库尔勒香梨】  一级鲜果5斤  </div>
+			<div class="">
+				拼团价：<span class="color_e82281">￥<span class="font_16">15</span></span>   <span class="font_12 margin_left_10">X 1</span>
+			</div>
+		</div>
+		<div class="clear_both"></div>
+	</div>
+
+	<div class="line_height_35px padding_left_15 padding_right_15">
+		<div class="float_left">
+			快递费
+		</div>
+		<div class="float_right">
+			￥15.00
+		</div>
+		<div class="clear_both"></div>
+	</div>
+</div>
+
+<div style="border:2px solid #efefef"></div>
+
+<div class="padding_15px">
+	<div class="relative line_height_45px" >
+		<div class="float_left width_50px">
+			<img src="../images/pinggroup/wx_icon.jpg" class="img_responsive width_50px border_radius25">
+		</div>
+		<div class="margin_left_50">
+			<div class="float_right width_70px">
+				<div class="absolute bg_fdd000 color_e82281 padding_left_5 text_center" style="right: 12px;width: 60px;">
+					<span class="icon iconfont color_e5005a">&#xE68E;</span>
+				</div>
+			</div>
+			<div class="margin_right_70">
+				<div class="overflow_hidden padding_left_10 border_b_bottom_eee border_b_top_eee">
+					微信支付
+				</div>
+			</div>
+		</div>
+		<div class="clear_both"></div>
+	</div>
+</div>
+
+<div class="color_e82281 padding_left_15 padding_right_15">
+	说明：不在免费配送社区范围内，需另外支付运费5元。
+</div>
+
+<div class="fixed position_bottom_left_0 all_width text_center color_fff line_height_45px">
+	<div class="float_left width_50 bg_ff99cb padding_top_5">
+		应付总额￥20
+	</div>
+	<div class="float_left width_50 bg_ce0064 padding_top_5">
+		立即支付
+	</div>
+	<div class="clear_both"></div>
+</div>
+<div style="height: 45px;"></div>
+
+
+<!--  收货地址弹出层  -->
+<div class="modal fade" id="sqh_model">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header overflow_hidden">
+				<!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+				<span class="modal-title float_left font_16">请选择收货地址</span>
+				<a class="modal-title a_sqh_font_color_red float_right " href="{:U('Userinfo/addressAdd',array('callback'=>$callback))}">新增收货地址</a>
+			</div>
+			<div class="modal-body">
+				<div class="div_table">
+					<div class="div_table">
+						<div class="div_table_row">
+							<div class="div_table_cell padding_right_10" style="vertical-align: middle">
+							<span aria-hidden="true" class="icon iconfont  color_bbbbbb "
+								  onclick="selectAddress(this,15223,144)">&#xe61c;</span>
+							</div>
+							<div class="div_table_cell">
+								<div>17#801</div>
+								<div>黄彪，18229886770</div>
+							</div>
+						</div>
+						<div class="div_table_row">
+							<div class="div_table_cell padding_right_10" style="vertical-align: middle">
+							<span aria-hidden="true" class="icon iconfont  color_bbbbbb "
+								  onclick="selectAddress(this,15223,144)">&#xe61c;</span>
+							</div>
+							<div class="div_table_cell">
+								<div>13楼</div>
+								<div>黄彪，18229886770</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<script type="text/javascript" src="../public/js/jquery.min.js"></script>
+<script type="text/javascript" src="../public/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+
+	//弹出地址的对话框
+	function showDialogAddress(){
+		//{"backdrop":"static"}点击背景不会消失
+		$('#sqh_model').modal('show').on("shown.bs.modal",function(){
+			// 是弹出框居中。。。
+			var $modal_dialog = $(this).find('.modal-dialog');
+			//获取可视窗口的高度
+			var clientHeight = (document.body.clientHeight < document.documentElement.clientHeight) ? document.body.clientHeight: document.documentElement.clientHeight;
+			//得到dialog的高度
+			var dialogHeight = $modal_dialog.height();
+			//计算出距离顶部的高度
+			var m_top = (clientHeight - dialogHeight)/2;
+			$modal_dialog.css({'margin': m_top + 'px auto'});
+		});
+
+	}
+
+
+	//选择默认地址
+	function selectAddress(obj,aid,xid){
+		var $currentObj = $(obj);
+		unSelectedAllAddress($currentObj);
+		comfirmDz(obj,aid,xid);
+		$currentObj.removeClass("color_bbbbbb").addClass("color_3eb034");
+	}
+
+
+	//清除所有地址选中的样式，全部改为不选中
+	function unSelectedAllAddress($obj){
+		$obj.closest(".div_table").find(".iconfont").removeClass("color_3eb034").addClass("color_bbbbbb");
+	}
+
+	function comfirmDz(e,aid,xid){
+		/*
+		if(xid == 145){
+			var is_all_str = "2";
+			if(is_all_str == 2){
+				sqh_tips({content : "该订单有不支持全城配送商品，您不能选择全城配送的地址"});
+				return false;
+			}
+		}
+		var url = "/index.php/Wap/Groupbuy/selectDz.html";
+		var is_all = $('input[name=is_all]').val();
+		var xid = $('input[name=xid]').val();
+		var weight = $('input[name=weight]').val();
+		var num = $('input[name=num]').val();
+		var showTotal = parseFloat($('#showTotal').html());
+		$.ajax({
+			type: 'POST',
+			url: url ,
+			data: {aid:aid,is_all:is_all,weight:weight} ,
+			dataType: 'json',
+			success: function(data){
+				if(data['status'] == 0){
+					alert(data['msg']);
+					$('#myModal').trigger('reveal:close')
+					return false;
+				}else{
+					$("input[name='aid']").val(aid);
+					$('.addressInfo').html("收货人："+data.lianxiren+","+data.phone);
+					$('.address').html("收货地址："+data.address);
+					$("input[name='sh_dizhi']").val(data.address);
+					$("input[name='sh_lianxiren']").val(data.lianxiren);
+					$("input[name='sh_phone']").val(data.phone);
+					$(".address_change").html("");
+					$('#sqh_model').modal('hide')
+					var n_xid = data['xid'];
+					$("input[name='xid']").val(n_xid);
+					if(n_xid == 145){
+						var fee_s = parseFloat("0");
+						var total = showTotal + fee_s;
+						$('#new').html(fee_s);
+						$("input[name='fee']").val(fee_s);
+						//计算出 货物价格 + 运费的价格
+						var currentCost = parseFloat($("span.original_cost").html().replace(/,/g,""))+fee_s;
+						$("span.original_cost").html(currentCost);
+
+						getHowMuch();
+						//alert("yuyuu");
+					}else{
+						//如果不需要运费，则总价格 - 运费的价格
+						var fee_s = parseFloat($("#new").html());
+						var currentCost = parseFloat($("span.original_cost").html().replace(/,/g,""))-fee_s;
+						$("span.original_cost").html(currentCost);
+						$('#new').html(0);
+						getHowMuch();
+					}
+
+					//调用关闭线下支付
+					closeXianxiaPayMent(data.is_close_xianxiaPay);
+				}
+			} ,
+		});
+		*/
+	}
+
+</script>
+</body>
+</html>

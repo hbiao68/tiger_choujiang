@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="../public/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../public/css/swiper.min.css">
+	<link rel="stylesheet" href="../public/css/hb_wap.css">
+	<title>小小“惠”画家</title>
+</head>
+<body class="margin_0">
+
+<style>
+	#pageContainer{
+		/*-moz-transform:translateX(20px);*/
+		/*-webkit-transform:translateX(20px);*/
+		/*-o-transform:translateX(20px);*/
+		/*-ms-transform:translateX(20px);*/
+		/*transform:translateX(20px);*/
+	}
+</style>
+
+<div class="overflow_hidden">
+	<div class="color_fff" style="width: 300%;overflow-x: scroll" id="pageContainer">
+		<div class="pageWidget float_left all_width " style="background: green">
+			<button onclick="nextPage(this)">下一页</button>
+		</div>
+		<div class="pageWidget float_left all_width " style="background: blue">
+			<button onclick="nextPage(this)">下一页</button>
+			<button onclick="beforePage(this)">上一页</button>
+		</div>
+		<div class="pageWidget float_left all_width " style="background: yellow">
+			<button onclick="beforePage(this)">上一页</button>
+		</div>
+		<div class="clear_both"></div>
+	</div>
+</div>
+
+
+<script type="text/javascript" src="../public/js/jquery.min.js"></script>
+<script type="text/javascript" src="../public/js/hb_common.js"></script>
+<script type="text/javascript" src="../public/js/swiper.min.js"></script>
+<script type="text/javascript">
+
+	//显示器的宽度
+	var __SCREEN_WIDTH__ = getScreenWidth();
+	//当前位置
+	var __CURRENT_POSITION__ = 0;
+
+	//切换页面
+	function transform(jqueryObj,stance){
+//		jqueryObj.css("-moz-transform","translateX("+stance+"px)");
+//		jqueryObj.css("-webkit-transform","translateX("+stance+"px)");
+//		jqueryObj.css("-o-transform","translateX("+stance+"px)");
+//		jqueryObj.css("-ms-transform","translateX("+stance+"px)");
+//		jqueryObj.css("transform","translateX("+stance+"px)");
+
+		jqueryObj.animate({
+			"-moz-transform": "translateX("+stance+"px)",
+			"-webkit-transform": "translateX("+stance+"px)",
+			"-o-transform": "translateX("+stance+"px)",
+			"-ms-transform": "translateX("+stance+"px)",
+			"transform": "translateX("+stance+"px)"
+		}, 2000 );
+
+	}
+
+	//下一页
+	function nextPage(obj){
+		__CURRENT_POSITION__ = __CURRENT_POSITION__ - __SCREEN_WIDTH__;
+		transform($("#pageContainer"),__CURRENT_POSITION__);
+	}
+
+	//下一页
+	function beforePage(obj){
+		__CURRENT_POSITION__ = __CURRENT_POSITION__ + __SCREEN_WIDTH__;
+		transform($("#pageContainer"),__CURRENT_POSITION__);
+	}
+
+	$(function(){
+		//计算页面的宽度
+		$(".pageWidget").css("width",getScreenWidth() + "px");
+
+	});
+
+</script>
+</body>
+</html>

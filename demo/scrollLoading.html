@@ -1,0 +1,548 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="../public/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../public/css/swiper.min.css">
+	<link rel="stylesheet" href="../public/css/hb_wap.css">
+	<title>小小“惠”画家</title>
+	<style>
+
+		.img_height_responsive{
+			height: 225px;
+			width: auto;
+			margin: auto;
+			display: block;
+		}
+		@media screen and (max-width: 320px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+			.img_height_responsive{
+				height: 190px;
+				width: auto;
+				margin: auto;
+				display: block;
+			}
+		}
+		@media screen and (min-width: 321px) and (max-width: 413px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+			.img_height_responsive{
+				height: 225px;
+				width: auto;
+				margin: auto;
+				display: block;
+			}
+		}
+		@media screen and (min-width: 413px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+			.img_height_responsive{
+				height: 250px;
+				width: auto;
+				margin: auto;
+				display: block;
+			}
+		}
+	</style>
+</head>
+<body class="margin_0">
+
+
+<div class="padding_10 fixed all_width" id="scrollWidget" onscroll="testScroll(this)" style="border-bottom: 3px solid #e61860;top: 20px;left: 0px;overflow-y:scroll;bottom: 20px;">
+	<div class="float_left width_50 padding_left_5 padding_right_5 margin_top_5">
+		<img src="../images/painter/zuoping.jpg" class="img_height_responsive" onclick="showBigImage(this)">
+		<div class="text_center line_height_25px">
+			001号 杨洁
+		</div>
+		<div class="font_16 text_center">
+			<a href="https://www.baidu.com">
+				<span class="bg_e61860 color_fff font_16 padding_left_10 padding_right_10 border_radius_4">投票</span>
+			</a>
+			<span class="margin_left_15 color_e61860">215</span>票
+		</div>
+	</div>
+	<div class="float_left width_50 padding_left_5 padding_right_5 margin_top_5">
+		<img src="../images/painter/zuoping.jpg" class="img_height_responsive" onclick="showBigImage(this)">
+		<div class="text_center line_height_25px">
+			001号 杨洁
+		</div>
+		<div class="font_16 text_center">
+			<a href="https://www.baidu.com">
+				<span class="bg_e61860 color_fff font_16 padding_left_10 padding_right_10 border_radius_4">投票</span>
+			</a>
+			<span class="margin_left_15 color_e61860">215</span>票
+		</div>
+	</div>
+	<div class="float_left width_50 padding_left_5 padding_right_5 margin_top_5">
+		<img src="../images/painter/zuoping.jpg" class="img_height_responsive" onclick="showBigImage(this)">
+		<div class="text_center line_height_25px">
+			001号 杨洁
+		</div>
+		<div class="font_16 text_center">
+			<a href="https://www.baidu.com">
+				<span class="bg_e61860 color_fff font_16 padding_left_10 padding_right_10 border_radius_4">投票</span>
+			</a>
+			<span class="margin_left_15 color_e61860">215</span>票
+		</div>
+	</div>
+	<div class="float_left width_50 padding_left_5 padding_right_5 margin_top_5">
+		<img src="../images/painter/zuoping.jpg" class="img_height_responsive" onclick="showBigImage(this)">
+		<div class="text_center line_height_25px">
+			001号 杨洁
+		</div>
+		<div class="font_16 text_center">
+			<a href="https://www.baidu.com">
+				<span class="bg_e61860 color_fff font_16 padding_left_10 padding_right_10 border_radius_4">投票</span>
+			</a>
+			<span class="margin_left_15 color_e61860">215</span>票
+		</div>
+	</div>
+	<div class="float_left width_50 padding_left_5 padding_right_5 margin_top_5">
+		<img src="../images/painter/zuoping.jpg" class="img_height_responsive" onclick="showBigImage(this)">
+		<div class="text_center line_height_25px">
+			001号 杨洁
+		</div>
+		<div class="font_16 text_center">
+			<a href="https://www.baidu.com">
+				<span class="bg_e61860 color_fff font_16 padding_left_10 padding_right_10 border_radius_4">投票</span>
+			</a>
+			<span class="margin_left_15 color_e61860">215</span>票
+		</div>
+	</div>
+	<div class="float_left width_50 padding_left_5 padding_right_5 margin_top_5">
+		<img src="../images/painter/zuoping.jpg" class="img_height_responsive" onclick="showBigImage(this)">
+		<div class="text_center line_height_25px">
+			001号 杨洁
+		</div>
+		<div class="font_16 text_center">
+			<a href="https://www.baidu.com">
+				<span class="bg_e61860 color_fff font_16 padding_left_10 padding_right_10 border_radius_4">投票</span>
+			</a>
+			<span class="margin_left_15 color_e61860">215</span>票
+		</div>
+	</div>
+	<div class="float_left width_50 padding_left_5 padding_right_5 margin_top_5">
+		<img src="../images/painter/zuoping.jpg" class="img_height_responsive" onclick="showBigImage(this)">
+		<div class="text_center line_height_25px">
+			001号 杨洁
+		</div>
+		<div class="font_16 text_center">
+			<a href="https://www.baidu.com">
+				<span class="bg_e61860 color_fff font_16 padding_left_10 padding_right_10 border_radius_4">投票</span>
+			</a>
+			<span class="margin_left_15 color_e61860">215</span>票
+		</div>
+	</div>
+	<div class="float_left width_50 padding_left_5 padding_right_5 margin_top_5">
+		<img src="../images/painter/zuoping.jpg" class="img_height_responsive" onclick="showBigImage(this)">
+		<div class="text_center line_height_25px">
+			001号 杨洁
+		</div>
+		<div class="font_16 text_center">
+			<a href="https://www.baidu.com">
+				<span class="bg_e61860 color_fff font_16 padding_left_10 padding_right_10 border_radius_4">投票</span>
+			</a>
+			<span class="margin_left_15 color_e61860">215</span>票
+		</div>
+	</div>
+	<div class="float_left width_50 padding_left_5 padding_right_5 margin_top_5">
+		<img src="../images/painter/zuoping.jpg" class="img_height_responsive" onclick="showBigImage(this)">
+		<div class="text_center line_height_25px">
+			001号 杨洁
+		</div>
+		<div class="font_16 text_center">
+			<a href="https://www.baidu.com">
+				<span class="bg_e61860 color_fff font_16 padding_left_10 padding_right_10 border_radius_4">投票</span>
+			</a>
+			<span class="margin_left_15 color_e61860">215</span>票
+		</div>
+	</div>
+	<div class="float_left width_50 padding_left_5 padding_right_5 margin_top_5">
+		<img src="../images/painter/zuoping.jpg" class="img_height_responsive" onclick="showBigImage(this)">
+		<div class="text_center line_height_25px">
+			001号 杨洁
+		</div>
+		<div class="font_16 text_center">
+			<a href="https://www.baidu.com">
+				<span class="bg_e61860 color_fff font_16 padding_left_10 padding_right_10 border_radius_4">投票</span>
+			</a>
+			<span class="margin_left_15 color_e61860">215</span>票
+		</div>
+	</div>
+	<div class="float_left width_50 padding_left_5 padding_right_5 margin_top_5">
+		<img src="../images/painter/zuoping.jpg" class="img_height_responsive" onclick="showBigImage(this)">
+		<div class="text_center line_height_25px">
+			001号 杨洁
+		</div>
+		<div class="font_16 text_center">
+			<a href="https://www.baidu.com">
+				<span class="bg_e61860 color_fff font_16 padding_left_10 padding_right_10 border_radius_4">投票</span>
+			</a>
+			<span class="margin_left_15 color_e61860">215</span>票
+		</div>
+	</div>
+	<div class="float_left width_50 padding_left_5 padding_right_5 margin_top_5">
+		<img src="../images/painter/zuoping.jpg" class="img_height_responsive" onclick="showBigImage(this)">
+		<div class="text_center line_height_25px">
+			001号 杨洁
+		</div>
+		<div class="font_16 text_center">
+			<a href="https://www.baidu.com">
+				<span class="bg_e61860 color_fff font_16 padding_left_10 padding_right_10 border_radius_4">投票</span>
+			</a>
+			<span class="margin_left_15 color_e61860">215</span>票
+		</div>
+	</div>
+	<div class="float_left width_50 padding_left_5 padding_right_5 margin_top_5">
+		<img src="../images/painter/zuoping.jpg" class="img_height_responsive" onclick="showBigImage(this)">
+		<div class="text_center line_height_25px">
+			001号 杨洁
+		</div>
+		<div class="font_16 text_center">
+			<a href="https://www.baidu.com">
+				<span class="bg_e61860 color_fff font_16 padding_left_10 padding_right_10 border_radius_4">投票</span>
+			</a>
+			<span class="margin_left_15 color_e61860">215</span>票
+		</div>
+	</div>
+	<div class="float_left width_50 padding_left_5 padding_right_5 margin_top_5">
+		<img src="../images/painter/zuoping.jpg" class="img_height_responsive" onclick="showBigImage(this)">
+		<div class="text_center line_height_25px">
+			001号 杨洁
+		</div>
+		<div class="font_16 text_center">
+			<a href="https://www.baidu.com">
+				<span class="bg_e61860 color_fff font_16 padding_left_10 padding_right_10 border_radius_4">投票</span>
+			</a>
+			<span class="margin_left_15 color_e61860">215</span>票
+		</div>
+	</div>
+	<div class="float_left width_50 padding_left_5 padding_right_5 margin_top_5">
+		<img src="../images/painter/zuoping.jpg" class="img_height_responsive" onclick="showBigImage(this)">
+		<div class="text_center line_height_25px">
+			001号 杨洁
+		</div>
+		<div class="font_16 text_center">
+			<a href="https://www.baidu.com">
+				<span class="bg_e61860 color_fff font_16 padding_left_10 padding_right_10 border_radius_4">投票</span>
+			</a>
+			<span class="margin_left_15 color_e61860">215</span>票
+		</div>
+	</div>
+	<div class="float_left width_50 padding_left_5 padding_right_5 margin_top_5">
+		<img src="../images/painter/zuoping.jpg" class="img_height_responsive" onclick="showBigImage(this)">
+		<div class="text_center line_height_25px">
+			001号 杨洁
+		</div>
+		<div class="font_16 text_center">
+			<a href="https://www.baidu.com">
+				<span class="bg_e61860 color_fff font_16 padding_left_10 padding_right_10 border_radius_4">投票</span>
+			</a>
+			<span class="margin_left_15 color_e61860">215</span>票
+		</div>
+	</div>
+	<div class="float_left width_50 padding_left_5 padding_right_5 margin_top_5">
+		<img src="../images/painter/zuoping.jpg" class="img_height_responsive" onclick="showBigImage(this)">
+		<div class="text_center line_height_25px">
+			001号 杨洁
+		</div>
+		<div class="font_16 text_center">
+			<a href="https://www.baidu.com">
+				<span class="bg_e61860 color_fff font_16 padding_left_10 padding_right_10 border_radius_4">投票</span>
+			</a>
+			<span class="margin_left_15 color_e61860">215</span>票
+		</div>
+	</div>
+	<div class="float_left width_50 padding_left_5 padding_right_5 margin_top_5">
+		<img src="../images/painter/zuoping.jpg" class="img_height_responsive" onclick="showBigImage(this)">
+		<div class="text_center line_height_25px">
+			001号 杨洁
+		</div>
+		<div class="font_16 text_center">
+			<a href="https://www.baidu.com">
+				<span class="bg_e61860 color_fff font_16 padding_left_10 padding_right_10 border_radius_4">投票</span>
+			</a>
+			<span class="margin_left_15 color_e61860">215</span>票
+		</div>
+	</div>
+	<div class="float_left width_50 padding_left_5 padding_right_5 margin_top_5">
+		<img src="../images/painter/zuoping.jpg" class="img_height_responsive" onclick="showBigImage(this)">
+		<div class="text_center line_height_25px">
+			001号 杨洁
+		</div>
+		<div class="font_16 text_center">
+			<a href="https://www.baidu.com">
+				<span class="bg_e61860 color_fff font_16 padding_left_10 padding_right_10 border_radius_4">投票</span>
+			</a>
+			<span class="margin_left_15 color_e61860">215</span>票
+		</div>
+	</div>
+	<div class="float_left width_50 padding_left_5 padding_right_5 margin_top_5">
+		<img src="../images/painter/zuoping.jpg" class="img_height_responsive" onclick="showBigImage(this)">
+		<div class="text_center line_height_25px">
+			001号 杨洁
+		</div>
+		<div class="font_16 text_center">
+			<a href="https://www.baidu.com">
+				<span class="bg_e61860 color_fff font_16 padding_left_10 padding_right_10 border_radius_4">投票</span>
+			</a>
+			<span class="margin_left_15 color_e61860">215</span>票
+		</div>
+	</div>
+	<div class="float_left width_50 padding_left_5 padding_right_5 margin_top_5">
+		<img src="../images/painter/zuoping.jpg" class="img_height_responsive" onclick="showBigImage(this)">
+		<div class="text_center line_height_25px">
+			001号 杨洁
+		</div>
+		<div class="font_16 text_center">
+			<a href="https://www.baidu.com">
+				<span class="bg_e61860 color_fff font_16 padding_left_10 padding_right_10 border_radius_4">投票</span>
+			</a>
+			<span class="margin_left_15 color_e61860">215</span>票
+		</div>
+	</div>
+	<div class="float_left width_50 padding_left_5 padding_right_5 margin_top_5">
+		<img src="../images/painter/zuoping.jpg" class="img_height_responsive" onclick="showBigImage(this)">
+		<div class="text_center line_height_25px">
+			001号 杨洁
+		</div>
+		<div class="font_16 text_center">
+			<a href="https://www.baidu.com">
+				<span class="bg_e61860 color_fff font_16 padding_left_10 padding_right_10 border_radius_4">投票</span>
+			</a>
+			<span class="margin_left_15 color_e61860">215</span>票
+		</div>
+	</div>
+	<div class="float_left width_50 padding_left_5 padding_right_5 margin_top_5">
+		<img src="../images/painter/zuoping.jpg" class="img_height_responsive" onclick="showBigImage(this)">
+		<div class="text_center line_height_25px">
+			001号 杨洁
+		</div>
+		<div class="font_16 text_center">
+			<a href="https://www.baidu.com">
+				<span class="bg_e61860 color_fff font_16 padding_left_10 padding_right_10 border_radius_4">投票</span>
+			</a>
+			<span class="margin_left_15 color_e61860">215</span>票
+		</div>
+	</div>
+	<div class="float_left width_50 padding_left_5 padding_right_5 margin_top_5">
+		<img src="../images/painter/zuoping.jpg" class="img_height_responsive" onclick="showBigImage(this)">
+		<div class="text_center line_height_25px">
+			001号 杨洁
+		</div>
+		<div class="font_16 text_center">
+			<a href="https://www.baidu.com">
+				<span class="bg_e61860 color_fff font_16 padding_left_10 padding_right_10 border_radius_4">投票</span>
+			</a>
+			<span class="margin_left_15 color_e61860">215</span>票
+		</div>
+	</div>
+	<div class="float_left width_50 padding_left_5 padding_right_5 margin_top_5">
+		<img src="../images/painter/zuoping.jpg" class="img_height_responsive" onclick="showBigImage(this)">
+		<div class="text_center line_height_25px">
+			001号 杨洁
+		</div>
+		<div class="font_16 text_center">
+			<a href="https://www.baidu.com">
+				<span class="bg_e61860 color_fff font_16 padding_left_10 padding_right_10 border_radius_4">投票</span>
+			</a>
+			<span class="margin_left_15 color_e61860">215</span>票
+		</div>
+	</div>
+	<div class="clear_both"></div>
+	<div class="margin_top_5 margin_bottom_5">
+		<img src="../images/loading.gif" class="loading_gif margin_center width_25px img_responsive">
+	</div>
+</div>
+
+
+
+<script type="text/javascript" src="../public/js/jquery.min.js"></script>
+<script type="text/javascript" src="../public/js/hb_common.js"></script>
+<script type="text/javascript" src="../public/js/swiper.min.js"></script>
+<script type="text/javascript">
+
+	//alert(getScreenHeight());
+
+	//$("#scrollWidget").css("height",getScreenHeight()-1+"px");
+
+
+	//测试DIV的滚动条
+	function testScroll(obj){
+		var nDivHight = $(obj).height(); //固定不变的 528px
+		var	nScrollHight = obj.scrollHeight; // 内容的实际高度 3201px
+		var	nScrollTop = obj.scrollTop; // 滚动条距离顶部的高度 时刻变化的，从0逐渐增大
+		console.log(nDivHight + " : " + nScrollHight + " : " + nScrollTop + " : ");
+	}
+
+
+	//显示大图
+	function showBigImage(obj){
+		$("#tipsWidget").removeClass("display_none");
+	}
+
+	//隐藏提示信息
+	function hideTips(obj){
+		$("#"+obj).addClass("display_none");
+	}
+
+	/**
+	 * 监听滚动条到底部发送请求
+	 */
+	function scrollLoad(userSetting){
+		var that = this;
+		//作为发送ajax的标记，true表示可以发送ajax，false表示不允许
+		this.ajaxFlag = true;
+		//如果用户没有传递参数，则使用默认参数
+		var userSetting = userSetting || {};
+
+		var defaultSetting = {
+			//滚动条距离200px就触发逻辑事件
+			threshold:100,
+			//监听的滚动条，默认是window的
+			targetWidget:"window",
+			//ajax的配置文件
+			ajaxSetting:{
+				url: "http://www.sqhzg.cn/house/templates/secondHouse/secondHouseList.html",
+				async: true,
+				type:"GET",
+				data:"page=1&name=3",
+				success: function(res,scrollLoadObj){
+					//表示不再发送请求
+					scrollLoadObj.ajaxFlag = false;
+				},
+				error:function(res,scrollLoadObj){
+					console.log(res);
+				}
+			},
+			//滚动条滚动事件
+			scrollFunc : function () {
+				var scrollTop,scrollHeight, windowHeight;
+				if(this.targetWidget == "window"){
+					scrollTop = $(this.targetWidget).scrollTop();
+					scrollHeight = $(document).height();
+					windowHeight = $(this.targetWidget).height();
+				}else{
+					var obj = $(this.targetWidget).get(0);
+					windowHeight = $(obj).height(); //固定不变的 528px
+					scrollHeight = obj.scrollHeight; // 内容的实际高度 3201px
+					scrollTop = obj.scrollTop; // 滚动条距离顶部的高度 时刻变化的，从0逐渐增大
+				}
+				//console.log(scrollTop + "-----"+scrollHeight + "-----"+windowHeight + "-----");
+				if(scrollHeight - scrollTop - windowHeight < this.threshold){
+					if(that.ajaxFlag){
+						//alert("开始发送请求");
+						that.ajaxFlag = false;
+						this.getPageData();
+					}
+				}
+			},
+			getPageData:function(){
+				alert("getPageData logic");
+				$.ajax({
+					url: that.setting.ajaxSetting.url,
+					async: that.setting.ajaxSetting.async,
+					type: that.setting.ajaxSetting.type,
+					data:that.setting.ajaxSetting.data,
+					success: function(res){
+						that.setting.ajaxSetting.success(res,that);
+					},
+					error:function(res){
+						that.setting.ajaxSetting.error(res,that);
+					}
+				});
+			}
+		};
+
+		//获取用户的配置文件，覆盖默认设置
+		this.setting = $.extend(defaultSetting,userSetting);
+
+		//给窗口滚动条绑定事件
+		this.bindWindowScroll = function(){
+			window.onscroll = function () {
+				that.setting.scrollFunc();
+				//检查loading图片是否显示
+				if(that.ajaxFlag){
+					$(".loading_gif").removeClass("display_none");
+				}else{
+					$(".loading_gif").addClass("display_none");
+				}
+			};
+		};
+
+		//给窗口滚动条绑定事件
+		this.bindTargetWidgetWindowScroll = function(){
+			$(that.setting.targetWidget).on("scroll",function(){
+				that.setting.scrollFunc();
+				//检查loading图片是否显示
+				if(that.ajaxFlag){
+					$(".loading_gif").removeClass("display_none");
+				}else{
+					$(".loading_gif").addClass("display_none");
+				}
+			});
+		};
+
+		//给滚动条绑定事件
+		this.bindScrollFunc = function(){
+			//监听全局窗口滚动条
+			if(that.setting.targetWidget == "window"){
+				that.bindWindowScroll();
+			}else{
+				that.bindTargetWidgetWindowScroll();
+			}
+		};
+
+		//添加逻辑事件
+		this.logicFunc = function(){
+			that.setting.getPageData();
+		};
+
+		function init(){
+			that.bindScrollFunc();
+		}
+		init();
+	}
+
+	//
+	new scrollLoad({
+		"targetWidget":"#scrollWidget",
+		ajaxSetting: {
+			url: "http://www.sqhzg.cn/house/templates/secondHouse/secondHouseList.html",
+			async: true,
+			type: "GET",
+			data: "page=1&name=3",
+			success: function (res, scrollLoadObj) {
+				alert(res);
+				//表示不再发送请求
+				scrollLoadObj.ajaxFlag = false;
+			},
+			error: function (res, scrollLoadObj) {
+				console.log(res);
+			}
+		}
+	});
+
+	$(function(){
+		//广告位滑动
+		mySwiper = new Swiper ('.swiper-container', {
+			//滑动方向为水平
+			direction: 'horizontal',
+			//是否循环
+			loop: true,
+			//是否自动滑动
+			//autoplay:5000,
+			//分页器的位置，在class为swiper-pagination的容器中，容器在页面任意位置，不受限制
+			pagination: '.swiper-pagination',
+			//滑动之后触发的事件
+			onSlideChangeEnd: function(swiper){
+				//获取当前
+				var activeIndex = swiper.activeIndex;
+			}
+			// 如果需要滚动条
+			//scrollbar: '.swiper-scrollbar'
+		});
+	});
+
+
+
+</script>
+</body>
+</html>
